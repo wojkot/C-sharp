@@ -1,0 +1,83 @@
+﻿<Window x:Class="Sprinkler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sprinkler"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="497" Width="525">
+    <Grid>
+        <ComboBox x:Name="cbox_state1" HorizontalAlignment="Left" Margin="44,189,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="Content">
+            <ComboBoxItem Name="state1_1">North</ComboBoxItem>
+            <ComboBoxItem Name="state1_2">West</ComboBoxItem>
+            <ComboBoxItem Name="state1_3">South</ComboBoxItem>
+            <ComboBoxItem Name="state1_4">East</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="cbox_state2" HorizontalAlignment="Left" Margin="44,243,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="Content">
+            <ComboBoxItem Name="state2_1">North</ComboBoxItem>
+            <ComboBoxItem Name="state2_2">West</ComboBoxItem>
+            <ComboBoxItem Name="state2_3">South</ComboBoxItem>
+            <ComboBoxItem Name="state2_4">East</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="cbox_state3" HorizontalAlignment="Left" Margin="44,299,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="Content">
+            <ComboBoxItem Name="state3_1">North</ComboBoxItem>
+            <ComboBoxItem Name="state3_2">West</ComboBoxItem>
+            <ComboBoxItem Name="state3_3">South</ComboBoxItem>
+            <ComboBoxItem Name="state3_4">East</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="cbox_state4" HorizontalAlignment="Left" Margin="44,354,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="Content">
+            <ComboBoxItem Name="state4_1">North</ComboBoxItem>
+            <ComboBoxItem Name="state4_2">West</ComboBoxItem>
+            <ComboBoxItem Name="state4_3">South</ComboBoxItem>
+            <ComboBoxItem Name="state4_4">East</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="tbox_time_s1" HorizontalAlignment="Left" Height="23" Margin="106,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+        <TextBox x:Name="tbox_time_s2" HorizontalAlignment="Left" Height="23" Margin="106,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+        <TextBox x:Name="tbox_time_s3" HorizontalAlignment="Left" Height="23" Margin="106,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+        <TextBox x:Name="tbox_time_s4" HorizontalAlignment="Left" Height="23" Margin="106,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" RenderTransformOrigin="0.483,4"/>
+        <Rectangle x:Name="diode_north" Fill="#FF21610E" HorizontalAlignment="Left" Height="19" Margin="235,190,0,0" Stroke="Black" VerticalAlignment="Top" Width="66"/>
+        <Rectangle x:Name="diode_west" Fill="#FF21610E" HorizontalAlignment="Left" Height="19" Margin="235,274,0,0" Stroke="Black" VerticalAlignment="Top" Width="66"/>
+        <Rectangle x:Name="diode_south" Fill="#FF21610E" HorizontalAlignment="Left" Height="19" Margin="235,247,0,0" Stroke="Black" VerticalAlignment="Top" Width="66"/>
+        <Rectangle x:Name="diode_east" Fill="#FF21610E" HorizontalAlignment="Left" Height="19" Margin="235,219,0,0" Stroke="Black" VerticalAlignment="Top" Width="66"/>
+        <TextBox x:Name="tbox_timeleft" HorizontalAlignment="Left" Height="23" Margin="261,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="tbox_contstatus" HorizontalAlignment="Left" Height="23" Margin="231,424,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276"/>
+        <Slider x:Name="water_press_slider" HorizontalAlignment="Left" Margin="283,368,0,0" VerticalAlignment="Top" Width="169" Maximum="100" IsSnapToTickEnabled="False" TickFrequency="5" TickPlacement="BottomRight"/>
+        <Button x:Name="rain_btn" Content="Rain" HorizontalAlignment="Left" Margin="366,247,0,0" VerticalAlignment="Top" Width="75" Height="34" Click="rain_btn_Click"/>
+        <Slider x:Name="run_selector_slider" HorizontalAlignment="Left" Margin="69,93,0,0" VerticalAlignment="Top" Width="46" RenderTransformOrigin="0.5,0.5" Maximum="1" SmallChange="1" IsSnapToTickEnabled="True" TickFrequency="1" ValueChanged="run_selector_slider_ValueChanged">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+        <Button x:Name="setup_btn" Content="Setup" HorizontalAlignment="Left" Margin="129,79,0,0" VerticalAlignment="Top" Width="86" Height="37" Click="setup_btn_Click"/>
+        <Button x:Name="start_btn" Content="Start" HorizontalAlignment="Left" Margin="239,79,0,0" VerticalAlignment="Top" Width="90" Height="37" Click="start_btn_Click"/>
+        <Button x:Name="stop_btn" Content="Stop" HorizontalAlignment="Left" Margin="354,79,0,0" VerticalAlignment="Top" Width="87" Height="37" Click="stop_btn_Click"/>
+        <Label x:Name="label_rs" Content="Run Selector" HorizontalAlignment="Left" Margin="33,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_single" Content="Single" HorizontalAlignment="Left" Margin="22,71,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_continuous" Content="Continuous" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_zs" Content="Zone Setup" HorizontalAlignment="Left" Margin="71,158,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_state1" Content="State" HorizontalAlignment="Left" Margin="0,189,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_state2" Content="State" HorizontalAlignment="Left" Margin="0,243,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.568,2.846"/>
+        <Label x:Name="label_state3" Content="State" HorizontalAlignment="Left" Margin="0,299,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_state4" Content="State" HorizontalAlignment="Left" Margin="0,354,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_time1" Content="Time" HorizontalAlignment="Left" Margin="65,214,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_time2" Content="Time" HorizontalAlignment="Left" Margin="65,270,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_time3" Content="Time" HorizontalAlignment="Left" Margin="65,325,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_time4" Content="Time" HorizontalAlignment="Left" Margin="65,381,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_zsi" Content="Zone Indicators" HorizontalAlignment="Left" Margin="214,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.62,0.808"/>
+        <Label x:Name="label_north" Content="North" HorizontalAlignment="Left" Margin="194,186,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_east" Content="East" HorizontalAlignment="Left" Margin="194,216,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_south" Content="South" HorizontalAlignment="Left" Margin="194,243,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.452,1.808"/>
+        <Label x:Name="label_west" Content="West" HorizontalAlignment="Left" Margin="194,271,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.452,1.808"/>
+        <Label x:Name="label_tleft" Content="Time Left" HorizontalAlignment="Left" Margin="194,299,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.452,1.808"/>
+        <Label x:Name="label_wpressure" Content="Water Pressure (%)" HorizontalAlignment="Left" Margin="315,337,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.452,1.808"/>
+        <Label x:Name="label_zero" Content="0" HorizontalAlignment="Left" Margin="280,389,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.452,1.808"/>
+        <Label x:Name="label_hundred" Content="100" HorizontalAlignment="Left" Margin="432,389,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.452,1.808"/>
+        <Label x:Name="label_contstatus" Content="Controller Status" HorizontalAlignment="Left" Margin="129,423,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.452,1.808"/>
+
+    </Grid>
+</Window>

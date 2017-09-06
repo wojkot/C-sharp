@@ -1,0 +1,14 @@
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\bin\Debug\Sprinkler.exe.config
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\bin\Debug\Sprinkler.exe
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\bin\Debug\Sprinkler.pdb
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\Sprinkler.csprojResolveAssemblyReference.cache
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\MainWindow.g.cs
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\App.g.cs
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\Sprinkler_MarkupCompile.cache
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\Sprinkler_MarkupCompile.lref
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\MainWindow.baml
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\Sprinkler.g.resources
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\Sprinkler.Properties.Resources.resources
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\Sprinkler.csproj.GenerateResource.Cache
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\Sprinkler.exe
+c:\users\wojciech\documents\visual studio 2015\Projects\Sprinkler\Sprinkler\obj\Debug\Sprinkler.pdb
