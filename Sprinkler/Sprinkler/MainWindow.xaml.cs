@@ -21,7 +21,8 @@ using System.ComponentModel;
 namespace Sprinkler
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Project based on National Instruments example of Certivied LabVIEW Developer exam "Sprinkler Controller"
+    /// http://www.ni.com/gate/gb/GB_EKITCLDEXMPRP/US
     /// </summary>
     /// 
     public partial class MainWindow : Window
